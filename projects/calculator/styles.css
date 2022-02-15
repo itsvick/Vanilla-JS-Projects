@@ -1,0 +1,92 @@
+:root {
+  font-size: 16px;
+  --body-background: #92a9bd;
+  --dark-grey: #2e2e2e;
+  --light-grey: #636363;
+  --light-grey-1: #858585;
+  --text-color: #fff;
+  --orange: #ff8400;
+  --light-orange: #ffa647;
+  --blue: #0099ff;
+  --light-blue: #00b2ff;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Signika", sans-serif;
+  background-color: var(--body-background);
+}
+.container {
+  height: 450px;
+  width: 380px;
+  margin: 0 auto;
+  background-color: var(--dark-grey);
+  border-radius: 10px;
+}
+.title {
+  color: var(--text-color);
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2rem;
+}
+.expression {
+  background-color: var(--light-grey);
+  height: 50px;
+  margin: 16px;
+  padding: 0 8px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px #444444 inset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--text-color);
+  font-size: 1.4rem;
+}
+.numpad-container {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.row button {
+  height: 55px;
+  width: 55px;
+  background-color: var(--light-grey);
+  color: var(--text-color);
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px #222222;
+  cursor: pointer;
+  border-color: var(--light-grey);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.row button:hover {
+  background-color: var(--light-grey-1);
+}
+
+.orange-btn {
+  background-color: var(--orange) !important;
+}
+.orange-btn:hover {
+  background-color: var(--light-orange) !important;
+}
+.blue-btn {
+  background-color: var(--blue) !important;
+}
+
+.blue-btn:hover {
+  background-color: var(--light-blue) !important;
+}

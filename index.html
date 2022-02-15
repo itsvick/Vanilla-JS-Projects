@@ -5,54 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Vanilla Javascript Projects</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Frank+Ruhl+Libre:wght@300&family=Josefin+Sans:wght@500&family=Mulish&family=Roboto+Slab&family=Signika:wght@300&display=swap"
       rel="stylesheet">
-    <title>Calculator</title>
   </head>
 
   <body>
+    <header>
+      <h1 class="title">Vanilla Javascript Projects</h1>
+    </header>
     <main>
       <section class="container">
-        <header>
-          <h1 class="title">Calculator</h1>
-        </header>
-        <div class="expression" tabindex="0" aria-label="Answer is">
-          <h2 id="display"></h2>
+        <div class="tile" onclick="openProject('./projects/calculator/index.html')">
+          <img src="./assets/calculator.png" alt="">
+          <h2>Calculator</h2>
         </div>
-        <div class="numpad-container">
-          <div class="row">
-            <button data-action="numKey">7</button>
-            <button data-action="numKey">8</button>
-            <button data-action="numKey">9</button>
-            <button data-action="operatorKey">÷</button>
-            <button class="orange-btn" data-action="operatorKey" aria-label="All Clear">AC</button>
-          </div>
-          <div class="row">
-            <button data-action="numKey">4</button>
-            <button data-action="numKey">5</button>
-            <button data-action="numKey">6</button>
-            <button data-action="operatorKey" aria-label="Multiply">×</button>
-            <button class="orange-btn" data-action="operatorKey" aria-label="Delete">DEL</button>
-          </div>
-          <div class="row">
-            <button data-action="numKey">1</button>
-            <button data-action="numKey">2</button>
-            <button data-action="numKey">3</button>
-            <button data-action="operatorKey" aria-label="Minus">-</button>
-            <button class="blue-btn" data-action="operatorKey">=</button>
-          </div>
-          <div class="row">
-            <button data-action="operatorKey" aria-label="Decimal point">.</button>
-            <button data-action="numKey">0</button>
-            <button data-action="numKey">00</button>
-            <button data-action="operatorKey">+</button>
-            <button tabindex="-1"></button>
-          </div>
-        </div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
       </section>
     </main>
     <script src="./script.js"></script>
